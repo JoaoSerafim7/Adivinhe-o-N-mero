@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Adivinhe o Número</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎯 Adivinhe o Número (1 a 100)</h1>
+  <input type="number" id="palpite" placeholder="Digite seu palpite" />
+  <button id="botao" onclick="verificarPalpite()">Enviar</button>
+  <button onclick="reiniciarJogo()">🔄 Jogar Novamente</button>
+  <div id="resultado"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
